@@ -1,0 +1,12 @@
+[project]
+name = "shakyo-python"
+version = "0.1.0"
+description = "Python 初学者向け写経教材（Shakyo material）"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+# 教材スクリプトの集まりであってインストール可能なパッケージではないので、
+# uv にビルド/インストールを試みさせない（virtual project）。
+[tool.uv]
+package = false
